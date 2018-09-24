@@ -13,13 +13,33 @@
 
 <body>
   <!-- Navbar -->
-  <Nav>
-
-
-
-  </Nav>
+  <header>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">Employee Directory</a>
+    </nav>
+  </header>
+  <br>
 <!-- body -->
   <div class="container">
+    <!-- search bar -->
+    <div class="row search">
+      <div class="col-md-3">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" aria-label="Default" placeholder="Name" aria-describedby="inputGroup-sizing-default">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" aria-label="Default" placeholder="Office Number" aria-describedby="inputGroup-sizing-default">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" aria-label="Default" placeholder="Phone Number" aria-describedby="inputGroup-sizing-default">
+        </div>
+      </div>
+      <button type="button" class="btn btn-sm btn-outline-secondary">Secondary</button>
+    </div>
     <div class="row">
       <!-- side nav -->
       <div class="col-md-3">
@@ -33,7 +53,10 @@
       </div>
       <!-- main work area -->
       <div class="col-md-9">
+        <div class="content">
 
+
+        </div>
       </div>
 
 
@@ -60,9 +83,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!-- jQuery scripts -->
+  <script src="./Assets/javascript/employeeList.js"></script>
   <script src="./Assets/javascript/dom.js"></script>
   <script src="./Assets/javascript/app.js"></script>
-  <script src="./Assets/javascript/employeeList.js"></script>
+  
 </body>
 
 </html>
