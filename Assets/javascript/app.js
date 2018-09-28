@@ -22,9 +22,9 @@ const render = function (){
 // addName function for submit
 const addPerson = function (event){
   event.preventDefault();
-  const name = $("#empName").val().trim();
-  const office = $("#offNum").val().trim();
-  const phone = $("#phoNum").val().trim();
+  const name = $(".empName").val().trim();
+  const office = $(".offNum").val().trim();
+  const phone = $(".phoNum").val().trim();
   
  let newEmployee = {
    name: name,
