@@ -20,11 +20,18 @@ const render = function (){
 
 
 // addName function for submit
-const addPerson = function (){
-
-
-
-
+const addPerson = function (event){
+  event.preventDefault();
+  const name = $("#empName").val().trim();
+  const office = $("#offNum").val().trim();
+  const phone = $("#phoNum").val().trim();
+  
+ let newEmployee = {
+   name: name,
+   officeNum: office,
+   phoneNum: phone,
+ }
+ employeeList.push(newEmployee);
   render();
 }
 
@@ -49,9 +56,12 @@ const addPerson = function (){
 // function for deletion
 
 
-// buttons that target functions
+// side nav button functions
 $("#view").on("click", render);
-$("#add").on("click", addView);
-$("#update").on("click", addView);
-$("#verify").on("click", verifyView);
-$()
+// $("#add").on("click", addView);
+// $("#update").on("click", addView);
+// $("#verify").on("click", verifyView);
+// $("#delete").on("click", verifyView)
+
+// submit button functions
+$("#submit").on("click", addPerson);
