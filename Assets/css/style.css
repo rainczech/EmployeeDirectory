@@ -1,3 +1,15 @@
+h1 {
+  text-align: right;
+}
+
+.navbar {
+  background-color: darkgray;
+}
+
+input:placeholder-shown {
+  color: blue;
+}
+
 .card {
   text-align: center;
 }

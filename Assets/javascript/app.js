@@ -3,7 +3,7 @@ const empCard = $('.content');
 
 // render function for view button
 const render = function (){
-  $('.content').empty();
+  empCard.empty();
   for (let i=0; i<employeeList.length; i++){
     const newCard = (`<div class="card">
     <p>${employeeList[i].name}</p>
@@ -20,7 +20,7 @@ const render = function (){
 
 
 // addName function for submit
-const addPerson = function (event){
+const addEmp = function (event){
   event.preventDefault();
   const name = $(".empName").val().trim();
   const office = $(".offNum").val().trim();
@@ -38,7 +38,15 @@ const addPerson = function (event){
 // view for update is the same as add display
 // updateEmp function
 
-
+const updateEmp = function (event) {
+  event.preventDefault();
+  const name = $(".empName").val().trim();
+  for (let i=0; i<employeeList.length; i++){
+    if (name === employeeList[i].name){
+      
+    }
+  }
+}
 
 
 
@@ -64,4 +72,4 @@ $("#view").on("click", render);
 // $("#delete").on("click", verifyView)
 
 // submit button functions
-$("#submit").on("click", addPerson);
+$("#submit").on("click", addEmp);
