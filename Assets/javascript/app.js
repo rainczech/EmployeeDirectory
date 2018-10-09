@@ -43,7 +43,13 @@ const updateEmp = function (event) {
   const name = $(".empName").val().trim();
   for (let i=0; i<employeeList.length; i++){
     if (name === employeeList[i].name){
-      
+      const office = $(".offNum").val().trim();
+      const phone = $(".phoNum").val().trim();
+      employeeList[i].officeNum = office;
+      employeeList[i].phoneNum = phone;
+
+    } else {
+      alert ("There is no employee by that name");
     }
   }
 }
